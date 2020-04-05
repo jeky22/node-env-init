@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "webpack --mode development",
     "start": "node dist/main.js",
-    "lint": "eslint ./src/*.js"
+    "lint": "eslint ./src/**/*.js"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +27,21 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "async": "^3.2.0",
+    "aws-sdk": "^2.653.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
   }
 }
